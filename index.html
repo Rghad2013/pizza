@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizza Palace</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Pizza Palace</h1>
+            <p>fresh food, made with love, every single day</p>
+        </div>
+    </header>
+
+    <nav class="nav">
+        <div class="container nav-inner">
+            <a href="#hero">Home</a>
+            <a href="#category">Category</a>
+            <a href="#menu">Menu</a>
+            <a href="#book">Book a Table</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h2>Hungry? <span>you are in the right place</span></h2>
+                    <p>Order your favorite meal in 3 steps</p>
+                    <button class="primary-btn" type="button">Order now</button>
+                </div>
+                <img src="images/images.cover.jpg" alt="Pizza Palace pizza selection" />
+            </div>
+        </section>
+
+        <hr />
+
+        <section id="category" class="section">
+            <div class="container">
+                <h2>Food categories</h2>
+                <ul id="catetory-list"></ul>
+            </div>
+        </section>
+
+        <section id="menu" class="section">
+            <div class="container">
+                <h2>Our Menu</h2>
+                <div id="cards-con" class="cards-con"></div>
+            </div>
+        </section>
+
+        <section id="cart" class="section cart-section">
+            <div class="container">
+                <h2>Your Cart</h2>
+                <div id="cart-items" class="cart-items"></div>
+                <div class="cart-summary">
+                    <strong>Total:</strong>
+                    <span id="cart-total">0 EGP</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="book" class="section booking">
+            <div class="container">
+                <h2>Book a table</h2>
+                <form id="booking-form">
+                    <label for="name">Your name</label>
+                    <input type="text" id="name" placeholder="Enter your name" required />
+
+                    <label for="number">Number of people</label>
+                    <input type="number" id="number" placeholder="2" min="1" required />
+
+                    <label for="date">Date</label>
+                    <input type="date" id="date" required />
+
+                    <label for="note">Notes</label>
+                    <textarea id="note" rows="4" placeholder="Any special requests?"></textarea>
+
+                    <button class="book-btn" type="submit">Book now</button>
+                </form>
+            </div>
+        </section>
+
+        <hr />
+
+        <section id="contact" class="footer">
+            <div class="container">
+                <p>pizza palace, @copyright: 2026</p>
+                <p>contact us: 0123456789</p>
+                <p>open daily: 8:00am - 11:00pm</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="scrript.js"></script>
+</body>
+</html>
